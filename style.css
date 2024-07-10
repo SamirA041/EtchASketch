@@ -1,5 +1,64 @@
+* {
+    background-color: lemonchiffon;
+}
+
+body{ 
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* BOARD */
 .board{
     width: 500px;
     height: 500px;
     display: grid;
+    border: black solid 1px;
+}
+/* BUTTONS */
+.buttons {
+    display: flex;
+    justify-content: center;
+
+}
+
+button {
+    top:50%;
+    background-color: gray;
+    color: #fff;
+    border: black solid 1px; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+}
+
+button.black {
+    background-color: black;
+}
+
+button.white {
+    background-color: white;
+    color: black;
+    border: #0a0a23 solid 1px;
+}
+
+button.random {
+    background-image: linear-gradient(red, green, blue);
+}
+
+.size {
+    display: flex;
+    justify-content: center;
+
+}
+
+input {
+    background-color: white;
 }

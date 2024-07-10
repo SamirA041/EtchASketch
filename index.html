@@ -11,22 +11,26 @@
 
 <body>
     <div class="flex-container">
+     <div class="nav">
         <div class="title"><h1>SketchPad</h1></div>
+        <div class="mode">Mode: coloring</div>
+     </div>
         <div class="content">
-            <div class="board"></div>
-            <div class="button">
-                    <button onclick="changeColor('black')">Black</button>
-                    <button onclick="changeColor('white')">Eraser</button>
-                    <button onclick="changeColor('random')">Random</button>
-                    <button>Reset</button>
+                <div class="board"></div>
+                <div class="selections"></div>
+            <div class="buttons">
+                    <button onclick="changeColor('black')" class="black">Black</button>
+                    <button onclick="changeColor('white')" class="white">Eraser</button>
+                    <button onclick="changeColor('random')" class="random">Random</button>
+                    <button onclick="resetBoard()" class="Reset">Reset</button>
                 </div>
-                <div>
+                <div class="size">
                     <input type="text" 
                     placeholder="Size of Board" 
                     value="16" 
                     onchange="changeSize(this.value)"/>
                     <button>Set Size</button>
-            </div>
+                </div>
         </div>
     </div>
     <script src="script.js"></script>
